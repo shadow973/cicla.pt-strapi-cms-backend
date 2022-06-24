@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "name": "Brand",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "stolen": {
+      "via": "brands",
+      "model": "stolen"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bike": {
+      "via": "brands",
+      "model": "bikes"
+    }
+  }
+}

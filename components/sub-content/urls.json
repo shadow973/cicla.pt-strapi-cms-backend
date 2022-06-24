@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sub_content_urls",
+  "info": {
+    "name": "urls",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

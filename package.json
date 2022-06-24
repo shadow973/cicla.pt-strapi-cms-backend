@@ -1,0 +1,42 @@
+{
+    "name": "CICLA",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Backend CICLA application",
+    "scripts": {
+        "develop": "strapi develop",
+        "prod": "NODE_ENV=production strapi start",
+        "start": "strapi start",
+        "build": "strapi build",
+        "strapi": "strapi"
+    },
+    "dependencies": {
+        "csvtojson": "^2.0.10",
+        "knex": "0.21.18",
+        "mysql": "^2.18.1",
+        "nanoid": "^3.3.4",
+        "sqlite3": "5.0.0",
+        "strapi": "3.6.8",
+        "strapi-admin": "3.6.8",
+        "strapi-connector-bookshelf": "3.6.8",
+        "strapi-plugin-content-manager": "3.6.8",
+        "strapi-plugin-content-type-builder": "3.6.8",
+        "strapi-plugin-email": "3.6.8",
+        "strapi-plugin-i18n": "3.6.8",
+        "strapi-plugin-upload": "3.6.8",
+        "strapi-plugin-users-permissions": "3.6.8",
+        "strapi-provider-email-smtp": "1.0.3",
+        "strapi-utils": "3.6.8"
+    },
+    "author": {
+        "name": "A Strapi developer"
+    },
+    "strapi": {
+        "uuid": "ff112f6b-403a-4f06-b182-3e854ab666cc"
+    },
+    "engines": {
+        "node": ">=10.16.0 <=16.x.x",
+        "npm": "^6.0.0"
+    },
+    "license": "MIT"
+}

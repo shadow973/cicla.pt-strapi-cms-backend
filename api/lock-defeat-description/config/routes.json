@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lock-defeat-descriptions",
+      "handler": "lock-defeat-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lock-defeat-descriptions/count",
+      "handler": "lock-defeat-description.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lock-defeat-descriptions/:id",
+      "handler": "lock-defeat-description.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lock-defeat-descriptions",
+      "handler": "lock-defeat-description.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lock-defeat-descriptions/:id",
+      "handler": "lock-defeat-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lock-defeat-descriptions/:id",
+      "handler": "lock-defeat-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

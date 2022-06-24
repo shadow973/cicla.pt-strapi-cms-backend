@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wheel_sizes",
+  "info": {
+    "name": "wheel_size"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "size": {
+      "type": "string"
+    }
+  }
+}

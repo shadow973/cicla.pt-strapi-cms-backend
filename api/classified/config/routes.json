@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/classifieds",
+      "handler": "classified.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/classifieds/count",
+      "handler": "classified.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/classifieds/:id",
+      "handler": "classified.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/classifieds",
+      "handler": "classified.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/classifieds/:id",
+      "handler": "classified.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/classifieds/:id",
+      "handler": "classified.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

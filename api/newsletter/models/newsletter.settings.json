@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newsletters",
+  "info": {
+    "name": "newsletter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false
+    },
+    "token": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

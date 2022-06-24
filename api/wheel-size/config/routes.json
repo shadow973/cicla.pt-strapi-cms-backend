@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wheel-sizes",
+      "handler": "wheel-size.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wheel-sizes/count",
+      "handler": "wheel-size.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wheel-sizes/:id",
+      "handler": "wheel-size.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wheel-sizes",
+      "handler": "wheel-size.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wheel-sizes/:id",
+      "handler": "wheel-size.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wheel-sizes/:id",
+      "handler": "wheel-size.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

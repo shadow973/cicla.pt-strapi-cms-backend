@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sub_content_sub_contents",
+  "info": {
+    "name": "sub_content",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "icon": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "price": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "urls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-content.urls"
+    }
+  }
+}

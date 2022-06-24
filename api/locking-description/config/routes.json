@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/locking-descriptions",
+      "handler": "locking-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/locking-descriptions/count",
+      "handler": "locking-description.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/locking-descriptions/:id",
+      "handler": "locking-description.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/locking-descriptions",
+      "handler": "locking-description.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/locking-descriptions/:id",
+      "handler": "locking-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/locking-descriptions/:id",
+      "handler": "locking-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

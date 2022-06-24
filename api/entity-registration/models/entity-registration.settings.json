@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entity_registrations",
+  "info": {
+    "name": "Entity Registration",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "organization_name": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "register_bicycle": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "via": "entity_registrations",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "security_seals": {
+      "type": "enumeration",
+      "enum": [
+        "order_stamps",
+        "list_of_stamps"
+      ]
+    },
+    "assigned": {
+      "type": "string"
+    },
+    "available": {
+      "type": "string"
+    },
+    "entity_types": {
+      "collection": "entity-type",
+      "via": "entity_registration"
+    }
+  }
+}

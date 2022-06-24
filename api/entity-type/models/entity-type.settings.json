@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entity_types",
+  "info": {
+    "name": "Entity type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "entity_registration": {
+      "via": "entity_types",
+      "model": "entity-registration"
+    }
+  }
+}

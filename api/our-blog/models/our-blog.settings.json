@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_blogs",
+  "info": {
+    "name": "Our Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "date": {
+      "type": "date"
+    },
+    "blog_category": {
+      "model": "blog-category"
+    },
+    "comment": {
+      "via": "our_blogs",
+      "model": "comment"
+    }
+  }
+}

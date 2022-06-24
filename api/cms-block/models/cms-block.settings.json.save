@@ -1,0 +1,53 @@
+
+
+  "kind": "collectionType",
+  "collectionName": "cms_blocks",
+  "info": {
+    "name": "CMS Block",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "sub_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-content.sub-content"
+    }
+  }
+}

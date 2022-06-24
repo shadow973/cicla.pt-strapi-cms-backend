@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "name": "message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bike": {
+      "model": "bikes"
+    },
+    "sender": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "reciever": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "message": {
+      "type": "text"
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

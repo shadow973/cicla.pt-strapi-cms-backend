@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cms-pages",
+      "handler": "cms-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cms-pages/count",
+      "handler": "cms-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cms-pages/:id",
+      "handler": "cms-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cms-pages",
+      "handler": "cms-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cms-pages/:id",
+      "handler": "cms-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cms-pages/:id",
+      "handler": "cms-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

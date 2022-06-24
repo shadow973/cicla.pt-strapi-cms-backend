@@ -1,0 +1,165 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bikes",
+  "info": {
+    "name": "bikes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": "string"
+    },
+    "secondary_colors": {
+      "collection": "color",
+      "via": "bikes",
+      "dominant": true
+    },
+    "brands": {
+      "collection": "brand",
+      "via": "bike"
+    },
+    "color": {
+      "model": "color"
+    },
+    "serial_number_photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "invoice_photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bike_photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "category": {
+      "model": "category"
+    },
+    "materials": {
+      "collection": "material",
+      "via": "bike"
+    },
+    "wheel_size": {
+      "model": "wheel-size"
+    },
+    "suspension_types": {
+      "collection": "suspension-type",
+      "via": "bike"
+    },
+    "year": {
+      "model": "year"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "nickName": {
+      "type": "string"
+    },
+    "stolen": {
+      "type": "boolean",
+      "default": false
+    },
+    "stolen_details": {
+      "type": "json"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "on_sale": {
+      "type": "boolean"
+    },
+    "other_information": {
+      "type": "text"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "status": {
+      "type": "boolean",
+      "default": false
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "auth_code": {
+      "type": "string"
+    },
+    "cicla_number": {
+      "type": "string"
+    },
+    "transfer_email": {
+      "type": "email"
+    },
+    "transfer_name": {
+      "type": "string"
+    },
+    "for_stolen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "for_classified": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "classified_date": {
+      "type": "date"
+    }
+  }
+}

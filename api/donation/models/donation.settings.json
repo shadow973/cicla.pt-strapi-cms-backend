@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "name": "Donation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "country": {
+      "model": "country"
+    },
+    "state": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "zip_code": {
+      "type": "string"
+    },
+    "your_message": {
+      "type": "richtext"
+    },
+    "ammount": {
+      "type": "string"
+    },
+    "card_number": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "cvv": {
+      "type": "string"
+    },
+    "paypal": {
+      "type": "boolean"
+    },
+    "stripe": {
+      "type": "boolean"
+    }
+  }
+}

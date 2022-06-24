@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/stolens",
+      "handler": "stolen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stolens/count",
+      "handler": "stolen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stolens/:id",
+      "handler": "stolen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/stolens",
+      "handler": "stolen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/stolens/:id",
+      "handler": "stolen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/stolens/:id",
+      "handler": "stolen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

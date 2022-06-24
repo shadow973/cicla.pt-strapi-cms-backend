@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lock_defeat_descriptions",
+  "info": {
+    "name": "Lock defeat description"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

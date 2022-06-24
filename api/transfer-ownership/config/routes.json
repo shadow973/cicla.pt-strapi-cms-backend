@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transfer-ownerships",
+      "handler": "transfer-ownership.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfer-ownerships/count",
+      "handler": "transfer-ownership.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfer-ownerships/:id",
+      "handler": "transfer-ownership.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfer-ownership/email",
+      "handler": "transfer-ownership.transferOwnershipEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transfer-ownerships/:id",
+      "handler": "transfer-ownership.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transfer-ownerships/:id",
+      "handler": "transfer-ownership.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

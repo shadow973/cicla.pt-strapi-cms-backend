@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users-permissions_user",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "address": {
+      "type": "text"
+    },
+    "country": {
+      "model": "country",
+      "via": "users"
+    },
+    "district": {
+      "type": "string"
+    },
+    "taxpayer_number": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "date"
+    },
+    "entity_registrations": {
+      "via": "users_permissions_user",
+      "collection": "entity-registration"
+    },
+    "name": {
+      "type": "string"
+    },
+    "city": {
+      "via": "users",
+      "model": "cities",
+      "type": "string"
+    },
+    "address_coordinates": {
+      "type": "json"
+    }
+  }
+}

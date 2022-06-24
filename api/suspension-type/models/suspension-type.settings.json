@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suspension_types",
+  "info": {
+    "name": "suspension_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "bike": {
+      "via": "suspension_types",
+      "model": "bikes"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stolens",
+  "info": {
+    "name": "Stolen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "social_media_for_sale": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "string"
+    },
+    "sharing_on_social_media": {
+      "type": "boolean"
+    },
+    "brands": {
+      "via": "stolen",
+      "collection": "brand"
+    },
+    "model": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "serial_number": {
+      "type": "string"
+    },
+    "complementary_description": {
+      "type": "text"
+    },
+    "frame_type": {
+      "type": "string"
+    },
+    "frame_size": {
+      "type": "string"
+    },
+    "front_brakes_brand": {
+      "type": "string"
+    },
+    "front_brakes_model": {
+      "type": "string"
+    },
+    "rear_brakes_model": {
+      "type": "string"
+    },
+    "rear_brakes_brand": {
+      "type": "string"
+    },
+    "front_suspension_brand": {
+      "type": "string"
+    },
+    "front_suspension_model": {
+      "type": "string"
+    },
+    "front_suspension_size": {
+      "type": "string"
+    },
+    "rear_shock_absorber_brand": {
+      "type": "string"
+    },
+    "rear_shock_absorber_model": {
+      "type": "string"
+    },
+    "rear_shock_absorber_size": {
+      "type": "string"
+    },
+    "wheels_brand": {
+      "type": "string"
+    },
+    "wheels_model": {
+      "type": "string"
+    },
+    "wheels_size": {
+      "type": "string"
+    },
+    "tires_brand": {
+      "type": "string"
+    },
+    "tires_model": {
+      "type": "string"
+    },
+    "tires_size": {
+      "type": "string"
+    },
+    "handlebar_brand": {
+      "type": "string"
+    },
+    "handlebar_model": {
+      "type": "string"
+    },
+    "saddle_brand": {
+      "type": "string"
+    },
+    "saddle_model": {
+      "type": "string"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "lost_location": {
+      "type": "text"
+    },
+    "found_location": {
+      "type": "text"
+    },
+    "lost_date": {
+      "type": "datetime"
+    },
+    "found_date": {
+      "type": "datetime"
+    },
+    "bike_found": {
+      "type": "boolean"
+    },
+    "primary_color": {
+      "model": "color"
+    },
+    "colors": {
+      "collection": "color",
+      "via": "stolens_secondary",
+      "dominant": true
+    }
+  }
+}

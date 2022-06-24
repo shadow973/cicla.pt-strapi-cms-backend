@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transfer_ownerships",
+  "info": {
+    "name": "transfer_ownership"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "newOwner": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "bike": {
+      "model": "bikes"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "information": {
+      "type": "json"
+    },
+    "bikes": {
+      "model": "bikes"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "bike",
+        "stolen",
+        "sale",
+        "recover",
+        "transfer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 0
+    },
+    "title": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "text",
+      "maxLength": 2000,
+      "minLength": 3
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "bike": {
+      "model": "bikes"
+    }
+  }
+}

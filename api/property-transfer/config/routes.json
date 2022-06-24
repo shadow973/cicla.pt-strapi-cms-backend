@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/property-transfers",
+      "handler": "property-transfer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/property-transfers/count",
+      "handler": "property-transfer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/property-transfers/:id",
+      "handler": "property-transfer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/property-transfers",
+      "handler": "property-transfer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/property-transfers/:id",
+      "handler": "property-transfer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/property-transfers/:id",
+      "handler": "property-transfer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

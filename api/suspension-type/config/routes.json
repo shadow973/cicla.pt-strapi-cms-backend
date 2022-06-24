@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/suspension-types",
+      "handler": "suspension-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/suspension-types/count",
+      "handler": "suspension-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/suspension-types/:id",
+      "handler": "suspension-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/suspension-types",
+      "handler": "suspension-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/suspension-types/:id",
+      "handler": "suspension-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/suspension-types/:id",
+      "handler": "suspension-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

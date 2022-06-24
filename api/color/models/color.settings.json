@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colors",
+  "info": {
+    "name": "color"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stolens_secondary": {
+      "via": "colors",
+      "collection": "stolen"
+    },
+    "bikes": {
+      "via": "secondary_colors",
+      "collection": "bikes"
+    }
+  }
+}

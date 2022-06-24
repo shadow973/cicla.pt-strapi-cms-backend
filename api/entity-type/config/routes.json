@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entity-types",
+      "handler": "entity-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entity-types/count",
+      "handler": "entity-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entity-types/:id",
+      "handler": "entity-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/entity-types",
+      "handler": "entity-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/entity-types/:id",
+      "handler": "entity-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/entity-types/:id",
+      "handler": "entity-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

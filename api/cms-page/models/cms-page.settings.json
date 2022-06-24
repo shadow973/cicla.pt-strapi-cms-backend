@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cms_pages",
+  "info": {
+    "name": "CMS Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-content.content"
+    }
+  }
+}

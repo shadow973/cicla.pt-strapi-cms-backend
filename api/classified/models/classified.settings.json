@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classifieds",
+  "info": {
+    "name": "Classified",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "address": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "country": {
+      "model": "country"
+    },
+    "category": {
+      "model": "category"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

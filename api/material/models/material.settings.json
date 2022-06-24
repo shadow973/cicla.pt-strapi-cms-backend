@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "name": "Material"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "bike": {
+      "via": "materials",
+      "model": "bikes"
+    }
+  }
+}

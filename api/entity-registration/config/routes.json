@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entity-registrations",
+      "handler": "entity-registration.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entity-registrations/count",
+      "handler": "entity-registration.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entity-registrations/:id",
+      "handler": "entity-registration.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/entity-registrations",
+      "handler": "entity-registration.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/entity-registrations/:id",
+      "handler": "entity-registration.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/entity-registrations/:id",
+      "handler": "entity-registration.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

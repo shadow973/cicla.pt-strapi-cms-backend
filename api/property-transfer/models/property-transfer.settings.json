@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_transfers",
+  "info": {
+    "name": "Property Transfer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "new_owner": {
+      "type": "email"
+    },
+    "claim_bike": {
+      "type": "string"
+    }
+  }
+}

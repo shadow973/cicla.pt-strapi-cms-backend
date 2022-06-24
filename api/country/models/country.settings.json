@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "name": "country",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "code": {
+      "type": "string"
+    },
+    "users": {
+      "via": "country",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
